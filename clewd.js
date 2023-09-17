@@ -751,6 +751,7 @@ const updateParams = res => {
 
 !async function() {
     await (async () => {
+        console.log(ConfigPath);
         if (exists(ConfigPath)) {
             const userConfig = require(ConfigPath), validConfigs = Object.keys(Config), parsedConfigs = Object.keys(userConfig), parsedSettings = Object.keys(userConfig.Settings), invalidConfigs = parsedConfigs.filter((config => !validConfigs.includes(config))), validSettings = Object.keys(Config.Settings);
             UnknownSettings = parsedSettings.filter((setting => !validSettings.includes(setting)));
