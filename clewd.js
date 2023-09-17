@@ -270,7 +270,7 @@ let uuidOrg,
       FullColon: true,
       padtxt: 13500,
       xmlPlot: true,
-      Superfetch: true,
+      Superfetch: false,
     },
   };
 
